@@ -15,7 +15,6 @@ type imageBoxProps = {
 function ImageBox({icon,name}:imageBoxProps) {
   return <>
   <div className = 'flex flex-col'>
-  <div className = 'text-[#F7F7F7] text-xs'>{name}</div>
 <div className = "flex clip-circle bg-gray-400 w-[4rem]">
       <img src={`/src/assets/${icon}`}/>
     </div>
@@ -349,7 +348,7 @@ function App() {
 
   return (
     <>
-    {/* <div className='w-full min-h-full flex flex-col items-end'>
+    <div className='w-full min-h-full flex flex-col items-end'>
     <TaskList />
     <MessageBox isCurrentUser={false} text={"hello"} neighbor={"none"} />
     <MessageBox isCurrentUser={true} text={"hello"} neighbor={"below"} />
@@ -362,13 +361,13 @@ function App() {
     <br></br>
     <br></br>
 
-    <MessageThread conversation={conversation_ex} /> */}
-    <div className='w-screen flex flex-col items-center gap-2 my-2'>
+    <MessageThread conversation={conversation_ex} />
+    {/* <div className='w-screen flex flex-col items-center gap-2'>
     <Post name={post_ex.name} icon={post_ex.icon} group={post_ex.group} time={post_ex.time} description={post_ex.description} likes={post_ex.likes} comments={post_ex.comments} />
     <Post name={post_ex.name} icon={post_ex.icon} group={post_ex.group} time={post_ex.time} description={post_ex.description} likes={post_ex.likes} comments={post_ex.comments} />
     <Post name={post_ex.name} icon={post_ex.icon} group={post_ex.group} time={post_ex.time} description={post_ex.description} likes={post_ex.likes} comments={post_ex.comments} />
 
-    </div>
+    </div> */}
     </>
   )
 }
