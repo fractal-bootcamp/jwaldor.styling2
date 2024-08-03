@@ -413,7 +413,7 @@ function HeatGrid({ heatvalues }: HeatProps) {
 }
 
 type TabType = { name: string; picture: string; description: string };
-type TabProps = { tabs: [TabType, TabType, TabType]; currtab: number };
+type TabProps = { tabs: [TabType, TabType, TabType] };
 
 function TabDescriptor({ tabs }: TabProps) {
   const [currtab, setCurrTab] = useState(0);
